@@ -3,11 +3,12 @@
 $HPCTOOLKIT_MINIQMC_MODULES_BUILD
 $HPCTOOLKIT_MODULES_USE
 $HPCTOOLKIT_MODULES_HPCTOOLKIT
+which hpcrun
 cd "$HPCTOOLKIT_MINIQMC_ROOT"
 
 BINARY=miniqmc
 EXEC=miniqmc/miniqmc-build/bin/${BINARY}
-OUT=hpctoolkit-${BINARY}-gpu-openmp
+OUT=hpctoolkit-${BINARY}-gpu-openmp$HPCTOOLKIT_OUT_SUFFIX
 
 # remove old data
 CMD="rm -rf ${OUT}.m ${OUT}.d"
