@@ -1,11 +1,11 @@
 # load modules needed to build and run lammps
 module use /projects/modulefiles
 module use /usr/local/modules
-module load gcc/12.2.0+nvptx cuda/12.1 openmpi/4.1.4-gcc12.2.0 cmake
+module load gcc/11.4.0-nvptx cuda/12.2 openmpi/4.1.5/cuda-12.2.1 cmake
 
 # modules for hpctoolkit
 module use /home/johnmc/modulefiles
-export HPCTOOLKIT_MODULES_HPCTOOLKIT="module load hpctoolkit/default"
+export HPCTOOLKIT_MODULES_HPCTOOLKIT="module load hpctoolkit/2023.08.1"
 $HPCTOOLKIT_MODULES_HPCTOOLKIT
 
 # environment settings for this example

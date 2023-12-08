@@ -3,7 +3,7 @@
 BINARY=lmp
 LAMMPS_DIR=lammps/lammps/build
 EXEC=${LAMMPS_DIR}/$BINARY
-OUT=hpctoolkit-$BINARY
+OUT=hpctoolkit-$BINARY$HPCTOOLKIT_OUT_SUFFIX
 
 echo rm -rf log.run.done log.lammps $OUT.m $OUT.d
 rm -rf log.run.done log.lammps $OUT.m $OUT.d
