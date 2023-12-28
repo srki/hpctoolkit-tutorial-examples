@@ -27,7 +27,6 @@ else
 
   # load hpctoolkit modules
   module use /usr/local/modules
-  module use /home/johnmc/modules
 
   # modules for hpctoolkit
   export HPCTOOLKIT_MODULES_HPCTOOLKIT="module load hpctoolkit/master"
